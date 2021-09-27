@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+header h1 {
+    font-family: 'Frijole', cursive;
+    font-size: 40px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    height: 7.5rem;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.9), rgba(255, 255, 255, 0.9));
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px 0px 15px;
+}
+
+a {
+    padding: 10px;
+    margin: 30px;
+    border: 2px solid rgb(121, 243, 21);
+    border-radius: 50%;
+}
+
+a:hover {
+    background-color: rgb(121, 243, 21);
+}
+
+.main_content {
+    width: 100%;
+    height: 40rem;
+    padding-top: 8.34rem;
+    background-image: url('../images/todd-quackenbush-E9PJO_vL3E8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.text {
+    margin: 22em auto;
+    padding-left: 1rem;
+}
+
+.text h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(228, 241, 154);
+    padding-bottom: 0.5em;
+}
+
+.text p {
+    color: rgb(192, 192, 192);
+}
+
+/*gallery*/
+
+#photos {
+    background-image:url('../images/silas-baisch-K785Da4A_JA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+#photos h2 {
+    font-family: 'Frijole';
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 2rem;
+    color: rgb(0, 96, 109);
+    padding-top: 2rem;
+}
+
+.quote {
+    text-align: right;
+    color: rgb(228, 241, 154);
+    font-style: italic;
+    padding: 30px;
+}
+
+.quote p {
+    font-style: normal;
+    line-height: 2rem;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    max-width: 20rem;
+    flex: 1;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.image_container {
+    display: flex;
+    padding: 1rem;
+}
+
+#address {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../images/daniel-sinoca-AANCLsb0sU0-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    margin-top: 40px;
+}
+
+.location p {
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    line-height: 2rem;
+   
+}
+
+.location h3 {
+    color: rgb(121, 243, 21);
+    font-size: 1.9rem;
+    margin-top: 30%;
+    font-family: 'Frijole';
+}
+
+footer {
+    display: flex;
+    font-size: 0.8rem;
+    padding: 1rem;
+    background-image: linear-gradient(rgb(8, 66, 88), white);
+}
+
+
+@media only screen  and (max-width: 1024px) {
+    .gallery {
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen  and (max-width: 768px) {
+    header h1 {
+        text-align: center;
+    }
+
+    .main_content {
+        background-attachment: unset;        
+    }
+
+    .gallery img {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .links a {
+        margin: auto;
+        text-align: center;
+        border: 2px dotted white;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}
+
+@media only screen  and (max-width: 532px) {
+    #address {
+        align-items: unset;
+    }
+
+   .map {
+       display: none;
+   }
+}
+
+@media only screen  and (max-width: 386px) {
+    .links {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .main_content {
+        height: 20rem;
+    }
+
+    .text {
+        margin: auto;
+    }
+}
+
